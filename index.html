@@ -1,152 +1,235 @@
 <!DOCTYPE html>
+
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Amr Mohamed — Aspiring Backend Developer & Software Engineering Student Portfolio" />
-  <title>Amr Mohamed | Portfolio</title>
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <!-- Styles -->
-  <link rel="stylesheet" href="style.css" />
-  <!-- Favicon -->
-  <link rel="icon" href="favicon.ico" />
-</head>
-<body>
-  <!-- Hero Section -->
-  <header class="hero">
-    <!-- Starfield Canvas -->
-    <canvas id="starfield"></canvas>
-    <div class="container">
-      <h1>Amr Mohamed</h1>
-      <p>Software Engineering Student | Aspiring Backend Developer</p>
-      <nav>
-        <ul class="nav-list">
-          <li><a href="#about">About</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Main Content -->
-  <main>
-    <!-- About -->
-    <section id="about" class="section">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Amr Mohamed — Aspiring Backend Developer | Software Engineering Student Portfolio"
+    />
+    <title>Amr Mohamed | Portfolio</title>
+    <!-- Favicon and App Icons -->
+    <link rel="icon" href="amrPhoto.png" type="image/png" />
+    <link rel="apple-touch-icon" href="amrPhoto.png" />
+    <!-- Open Graph Meta Tags for social sharing -->
+    <meta property="og:title" content="Amr Mohamed | Portfolio" />
+    <meta
+      property="og:description"
+      content="Aspiring Backend Developer | Software Engineering Student Portfolio"
+    />
+    <meta property="og:image" content="amrPhoto.png" />
+    <meta name="theme-color" content="#1f4068" />
+    <meta property="og:url" content="" />
+    <meta property="og:type" content="website" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <header class="hero">
+      <!-- Starfield Canvas -->
+      <canvas id="starfield"></canvas>
       <div class="container">
-        <h2>About Me</h2>
-        <p>
-          I’m a second-year Software Engineering student at the Faculty of Computers and Information, Mansoura University. Passionate about backend development with Node.js and building scalable, reliable systems. Continuously expanding my database expertise and refining my skills through ICPC training and coding challenges.
-        </p>
+        <h1>Amr Mohamed</h1>
+        <p>Software Engineering Student | Aspiring Backend Developer</p>
+        <nav>
+          <ul class="nav-list">
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
       </div>
-    </section>
+    </header>
 
-    <!-- Education -->
-    <section id="education" class="section">
-      <div class="container">
-        <h2>Education</h2>
-        <div class="edu-item">
-          <h3>Faculty of Computers and Information, Mansoura University</h3>
-          <p><strong>Program:</strong> B.Sc. in Software Engineering</p>
-          <p><strong>Duration:</strong> Oct 2023 – Jul 2027 (Expected)</p>
-          <p><strong>Status:</strong> Completed First Year, Entering Second Year</p>
-          <p><strong>Relevant Coursework:</strong> Object-Oriented Programming; Data Structures & Algorithms; Databases; Data Communications & Networking; Operating Systems I</p>
+    <!-- Main Content -->
+    <main>
+      <!-- About -->
+      <section id="about" class="section">
+        <div class="container">
+          <h2>About Me</h2>
+          <p>
+            I'm a second-year Software Engineering student at the Faculty of
+            Computers and Information, Mansoura University. Passionate about
+            backend development with Node.js and building scalable, reliable
+            systems. Continuously expanding my database expertise and refining
+            my skills through ICPC training and coding challenges.
+          </p>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Skills -->
-    <section id="skills" class="section">
-      <div class="container">
-        <h2>Skills</h2>
-        <ul class="skills-list">
-          <li>Node.js</li>
-          <li>Express.js</li>
-          <li>SQL & Relational Databases</li>
-          <li>Microsoft SQL Server</li>
-          <li>JavaScript (ES6+)</li>
-          <li>HTML5 & CSS3</li>
-          <li>Git & GitHub</li>
-          <li>Object-Oriented Programming</li>
-          <li>Data Structures & Algorithms</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Projects -->
-    <section id="projects" class="section">
-      <div class="container">
-        <h2>Projects</h2>
-        <div class="card-container">
-          <div class="card">
-            <h3><i class="fas fa-key" aria-hidden="true"></i> PIN Authentication System</h3>
-            <p>Secure PIN entry and balance display CLI application written in C#.</p>
-          </div>
-          <div class="card">
-            <h3><i class="fas fa-university" aria-hidden="true"></i> Bank Management System</h3>
-            <p>C# console application for handling deposits and withdrawals with validation.</p>
-          </div>
-          <div class="card">
-            <h3><i class="fas fa-database" aria-hidden="true"></i> Database Design & Implementation</h3>
-            <ul>
-              <li>ERD design & relational modeling</li>
-              <li>DDL & DML scripting in Microsoft SQL Server</li>
-              <li>Implementing constraints and stored procedures</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3><i class="fas fa-code" aria-hidden="true"></i> Linear Algebra Solver</h3>
-            <p>Windows Forms application for solving linear algebra equations in C#.</p>
-          </div>
-          <div class="card">
-            <h3><i class="fas fa-user" aria-hidden="true"></i> User Data Storage</p>
-            <p>C# console app for conditional data collection and output.</p>
+      <!-- Education -->
+      <section id="education" class="section">
+        <div class="container">
+          <h2>Education</h2>
+          <div class="edu-item">
+            <h3>Faculty of Computers and Information, Mansoura University</h3>
+            <p><strong>Program:</strong> B.Sc. in Software Engineering</p>
+            <p><strong>Duration:</strong> Oct 2023 – Jul 2027 (Expected)</p>
+            <p><strong>Status:</strong> Currently in Second Year</p>
+            <p>
+              <strong>Relevant Coursework:</strong> Object-Oriented Programming;
+              Data Structures & Algorithms; Databases; Data Communications &
+              Networking; Operating Systems I
+            </p>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Experience -->
-    <section id="experience" class="section">
-      <div class="container">
-        <h2>Experience</h2>
-        <div class="exp-item">
-          <h3>ICPC Level Zero Training</h3>
-          <p><strong>Date:</strong> March 2024</p>
-          <p>Collaborative C++ algorithmic problem-solving challenges.</p>
+      <!-- Skills -->
+      <section id="skills" class="section">
+        <div class="container">
+          <h2>Skills</h2>
+          <ul class="skills-list">
+            <li>Python</li>
+            <li>C#</li>
+            <li>C++</li>
+            <li>JavaScript (ES6+)</li>
+            <li>Object-Oriented Programming</li>
+            <li>Data Structures & Algorithms</li>
+            <li>Node.js</li>
+            <li>Express.js</li>
+            <li>SQL & Relational Databases</li>
+            <li>Microsoft SQL Server</li>
+            <li>HTML5 & CSS3</li>
+            <li>Git & GitHub</li>
+          </ul>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Contact -->
-    <section id="contact" class="section">
-      <div class="container">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:amrmohamedp2005@gmail.com">amrmohamedp2005@gmail.com</a></p>
-        <p>Phone: +20 155 224 4536</p>
-        <div class="social-links">
-          <a href="https://www.linkedin.com/in/amr-mohamed-88586b294/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
-          <a href="https://github.com/AMR-MOHAMED0" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
-          <a href="mailto:amrmohamedp2005@gmail.com" target="_blank"><i class="fas fa-envelope" aria-hidden="true"></i> Email</a>
-          <a href="https://wa.me/201552244536" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp" aria-hidden="true"></i> +20 155 224 4536</a>
+      <!-- Projects -->
+      <section id="projects" class="section">
+        <div class="container">
+          <h2>Projects</h2>
+          <div class="card-container">
+            <div class="card">
+              <h3>
+                <i class="fas fa-user" aria-hidden="true"></i> User Data Storage
+              </h3>
+              <p>C# console app for conditional data collection and output.</p>
+            </div>
+            <div class="card">
+              <h3>
+                <i class="fas fa-key" aria-hidden="true"></i> PIN Authentication
+                System
+              </h3>
+              <p>
+                Secure PIN entry and balance display CLI application written in
+                C#.
+              </p>
+            </div>
+            <div class="card">
+              <h3>
+                <i class="fas fa-university" aria-hidden="true"></i> Bank
+                Management System
+              </h3>
+              <p>
+                C# console application for handling deposits and withdrawals
+                with validation.
+              </p>
+            </div>
+            <div class="card">
+              <h3>
+                <i class="fas fa-code" aria-hidden="true"></i> Linear Algebra
+                Solver
+              </h3>
+              <p>
+                Windows Forms application for solving linear algebra equations
+                in C#.
+              </p>
+            </div>
+            <div class="card">
+              <h3>
+                <i class="fas fa-database" aria-hidden="true"></i> Database
+                Design & Implementation
+              </h3>
+              <ul>
+                <li>ERD design & relational modeling</li>
+                <li>DDL & DML scripting in Microsoft SQL Server</li>
+                <li>Implementing constraints and stored procedures</li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <a href="https://drive.google.com/uc?export=download&id=1BrgPXLX9CV96s4ziqXpm7T15bKDX1SdN" class="btn" download="Amr_Mohamed_CV.pdf">Download CV</a>
-      </div>
-    </section>
-  </main>
+      </section>
 
-  <!-- Scroll to Top -->
-  <button id="scrollToTopBtn" aria-label="Scroll to top">↑</button>
+      <!-- Experience -->
+      <section id="experience" class="section">
+        <div class="container">
+          <h2>Experience</h2>
+          <div class="exp-item">
+            <h3>ICPC Level Zero Training</h3>
+            <p><strong>Date:</strong> March 2024</p>
+            <p>Collaborative C++ algorithmic problem-solving challenges.</p>
+          </div>
+        </div>
+      </section>
 
-  <!-- Scripts -->
-  <script defer src="script.js"></script>
-</body>
+      <!-- Contact -->
+      <section id="contact" class="section">
+        <div class="container">
+          <h2>Contact</h2>
+          <p>
+            Email:
+            <a href="mailto:amrmohamedp2005@gmail.com"
+              >amrmohamedp2005@gmail.com</a
+            >
+          </p>
+          <p>Phone: +20 155 224 4536</p>
+          <div class="social-links">
+            <a
+              href="https://www.linkedin.com/in/amr-mohamed-88586b294/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn</a
+            >
+            <a
+              href="https://github.com/AMR-MOHAMED0"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fab fa-github" aria-hidden="true"></i> GitHub</a
+            >
+            <a href="mailto:amrmohamedp2005@gmail.com" target="_blank"
+              ><i class="fas fa-envelope" aria-hidden="true"></i> Email</a
+            >
+            <a
+              href="https://wa.me/201552244536"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fab fa-whatsapp" aria-hidden="true"></i> +20 155 224
+              4536</a
+            >
+          </div>
+          <a
+            href="https://drive.google.com/uc?export=download&id=1BrgPXLX9CV96s4ziqXpm7T15bKDX1SdN"
+            class="btn"
+            download="Amr_Mohamed_CV.pdf"
+            >Download CV</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <!-- Scroll to Top -->
+    <button id="scrollToTopBtn" aria-label="Scroll to top">↑</button>
+
+    <!-- Scripts -->
+    <script defer src="script.js"></script>
+  </body>
 </html>
